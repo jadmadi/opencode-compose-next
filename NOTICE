@@ -1,0 +1,10 @@
+This project includes a skill adapted from MiMoCode.
+
+  MiMoCode - https://github.com/XiaomiMiMo/MiMo-Code
+  Copyright (c) 2026 MiMo Code, Xiaomi Corporation
+  Copyright (c) 2025 opencode
+  Licensed under the MIT License.
+
+The adapted file is skills/compose-next/SKILL.md. It was rewritten for
+OpenCode V2: tool names, the worktree setting, and the reviewer dispatch were
+changed. The workflow contract itself comes from MiMoCode's compose-next skill.

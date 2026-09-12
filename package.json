@@ -1,0 +1,29 @@
+{
+  "name": "opencode-compose-next",
+  "version": "0.1.0",
+  "description": "OpenCode V2 plugin and skill for the compose-next workflow",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "bun test"
+  },
+  "exports": {
+    ".": "./compose-next.ts"
+  },
+  "files": [
+    "compose-next.ts",
+    "skills/compose-next/SKILL.md",
+    "agents/reviewer.md"
+  ],
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "skill",
+    "workflow",
+    "compose-next"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jadmadi/opencode-compose-next.git"
+  }
+}
