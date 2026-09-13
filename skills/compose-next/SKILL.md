@@ -179,6 +179,13 @@ After review passes, and before finishing the branch, finalize the feature docum
 **Journey log** - at most 5 entries that help future work: dead ends, pivots, or transferable lessons. Preserve useful prior entries and append new ones.
 ```
 
+4. If the repository is part of the `jadmadi/opencode-*` plugin ecosystem,
+   update the program map at `jadmadi/opencode-plugins` per its `AGENTS.md`
+   checklist: the section bullet, the commands and tools table, the limits and
+   overrides, and the design spec. When the map is a separate repository, ship
+   the map change on its own branch and pull request, and name that pull request
+   in the report.
+
 Update a design section only when it contradicts the delivered behavior. Commit the finalized document on the feature branch before finishing. This documentation-only commit sits outside the recorded reviewed range by construction. It does not restart verification or review, and CI re-running on it is expected.
 
 ## Finish
