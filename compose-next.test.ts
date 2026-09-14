@@ -1,5 +1,5 @@
 import { describe, expect, test } from "bun:test"
-import plugin, { promptFor } from "./compose-next.ts"
+import plugin, { promptFor, VERSION } from "./compose-next.ts"
 
 function invocation(overrides: Record<string, unknown> = {}) {
   return {
@@ -85,5 +85,12 @@ describe("execute", () => {
     await (plugin as any).setup(ctx)
     await added[0].execute(invocation({ prompt: { text: "" } }))
     expect(calls.prompt[0].text).toBe("Begin the compose-next workflow.")
+  })
+})
+
+describe("version", () => {
+  test("VERSION matches package.json", async () => {
+    const pkg = (await Bun.file(new URL("./package.json", import.meta.url)).json()) as { version: string }
+    expect(VERSION).toBe(pkg.version)
   })
 })
