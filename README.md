@@ -16,6 +16,12 @@ evidence. A fresh reviewer checks the change before you merge.
 | `skills/compose-next/SKILL.md`| The workflow contract                                   |
 | `agents/reviewer.md`          | Read-only reviewer subagent used in the Review phase    |
 
+## OpenCode
+
+This plugin runs on OpenCode. Install it with my referral link:
+
+https://opencode.ai/go?ref=N9H3ZEP22A
+
 ## Install
 
 ```sh

@@ -6,7 +6,7 @@
 // for it. The runtime does not resolve @opencode/plugin, so this file exports
 // a plain { id, setup } object.
 
-const VERSION = "0.1.0"
+const VERSION = "0.1.1"
 
 const SKILL_ID = "compose-next"
 const START_TEXT = "Begin the compose-next workflow."
