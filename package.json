@@ -1,6 +1,7 @@
 {
   "name": "opencode-compose-next",
   "version": "2026.9.0",
+  "builtUnder": "2.0.16",
   "description": "OpenCode V2 plugin and skill for the compose-next workflow",
   "type": "module",
   "license": "MIT",
