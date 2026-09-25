@@ -6,7 +6,7 @@ Guidance for agents working in this repository.
 
 An OpenCode V2 port of MiMoCode's compose-next workflow. One plugin
 (`compose-next.ts`), one skill (`skills/compose-next/SKILL.md`), and one
-reviewer subagent (`agents/reviewer.md`). No build step, no dependencies, MIT
+reviewer subagent (`agents/reviewer.md`). No build step, no dependencies, AGPL-3.0-only
 licensed.
 
 ## Local development
