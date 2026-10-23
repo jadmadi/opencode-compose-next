@@ -55,8 +55,9 @@ Add a test for any behavior you change.
 
 These are not style preferences. The port stops working if you break them.
 
-- No imports in the plugin. The runtime does not resolve `@opencode/plugin`.
-  Export a plain `{ id, setup }` object.
+- Import `{ Plugin } from "@opencode/plugin"` and export
+  `Plugin.define({ id, setup })`. The host provides the module at runtime; do
+  not add it as a package dependency. Tests stub it in `test-preload.ts`.
 - Keep the skill hidden from model auto-invocation
   (`metadata.opencode/autoinvoke: false`). The user starts it.
 - Quote any frontmatter `description` that contains a colon. An unquoted colon

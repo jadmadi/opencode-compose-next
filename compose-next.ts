@@ -3,10 +3,12 @@
 // Registers the /compose-next command. The command attaches the compose-next
 // skill (installed at ~/.config/opencode/skills/compose-next/SKILL.md) and
 // forwards the user's request, so the workflow starts only when the user asks
-// for it. The runtime does not resolve @opencode/plugin, so this file exports
-// a plain { id, setup } object.
+// for it. The host provides @opencode/plugin at runtime, so this file uses
+// Plugin.define.
 
-const VERSION = "2026.9.0"
+import { Plugin } from "@opencode/plugin"
+
+const VERSION = "2026.10.0"
 
 const SKILL_ID = "compose-next"
 const START_TEXT = "Begin the compose-next workflow."
@@ -50,7 +52,7 @@ async function skillInstalled(ctx: any, id: string): Promise<boolean> {
   }
 }
 
-const plugin = {
+const plugin = Plugin.define({
   id: "compose-next",
   async setup(ctx: any) {
     if (!(await skillInstalled(ctx, SKILL_ID))) {
@@ -70,7 +72,7 @@ const plugin = {
       })
     })
   },
-}
+})
 
 export { promptFor, VERSION }
 export default plugin

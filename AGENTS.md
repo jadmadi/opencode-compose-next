@@ -36,9 +36,9 @@ stays testable.
 
 ## Hard constraints
 
-- Do not import `@opencode/plugin`. The runtime does not resolve it. Export a
-  plain `{ id, setup }` object; the loader only needs a default export with an
-  `id` and a `setup` or `effect` function.
+- Import `{ Plugin } from "@opencode/plugin"` and export
+  `Plugin.define({ id, setup })`. The host provides the module at runtime; do
+  not add it as a package dependency. Tests stub it in `test-preload.ts`.
 - Keep the plugin dependency-free. Use Bun globals for file or process access.
 - The skill must keep `metadata.opencode/autoinvoke: false` so the model cannot
   start the workflow on its own. The command is the entry point.
