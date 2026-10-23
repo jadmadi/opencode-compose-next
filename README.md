@@ -42,7 +42,7 @@ opencode2 api get /api/command | grep compose-next
 
 For one project, install the skill under `.opencode/skills/` and the agent under
 `.opencode/agents/` instead, and put the plugin under `.opencode/plugins/`.
-Tested against OpenCode v2.0.3.
+Tested against OpenCode v2.1.3.
 
 To pin a release, replace `main` in the URL with a tag such as `v0.1.0`.
 
