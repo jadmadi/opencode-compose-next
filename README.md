@@ -44,7 +44,7 @@ For one project, install the skill under `.opencode/skills/` and the agent under
 `.opencode/agents/` instead, and put the plugin under `.opencode/plugins/`.
 Tested against OpenCode v2.1.4.
 
-To pin a release, replace `main` in the URL with a tag such as `v2026.10.0`.
+To pin a release, replace `main` in the URL with a tag such as `v2026.10.1`.
 
 ## Use
 
